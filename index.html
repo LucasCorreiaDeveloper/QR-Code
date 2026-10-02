@@ -62,10 +62,36 @@
     padding: 10px;
   }
 
-  footer {
+    footer {
     display: flex;
+    width: 100vw;
+    height: 200px;
     flex-direction: row;
-    background-color: hsl(218, 44%, 22%);
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(214, 65%, 25%);
+    border-radius: 10px;
+
+  }
+
+  footer p, a {
+    text-decoration: none;
+    color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    background-color: hsl(214, 65%, 25%);
+  }
+
+  footer a:hover {
+    color: black;
+    font-size: 25px;
+  }
+
+  @media (max-width: 600px) {
+    footer {
+      background-color: red;
+    }
+
   }
   </style>
 <body>
@@ -79,9 +105,8 @@
     </div>
   </main>
   
-  <footer class="attribution">
-    <a href="https://www.frontendmentor.io?ref=challenge">
-    Coded by <a href="#">Lucas Correia</a>
+  <footer class="rodape">
+    <p>Coded by <a href=" https://github.com/LucasCorreiaDeveloper " target="_blank"> Lucas Correia </a></p>
   </footer>
   </div>
 </body>
